@@ -32,10 +32,7 @@ main {
     max-width: 1440px;
     margin: 0 auto;
 }
-main > section {
-    max-width: 1159px;
-    margin: 0 auto;
-}
+
 .btn-primary {
     font-weight: 600;
     font-size: 1.25rem;
@@ -44,7 +41,9 @@ main > section {
     padding: 10px 60px;
     border-radius: 12px;
 }
-
+.bg-card {
+    background-color: #FFFFFF;
+}
 /* nav styles */
 .nav {
     max-width: 1159px;
@@ -123,10 +122,16 @@ main > section {
     width: 41%;
 }
 /* curriculum section styles  */
-.curriculum-container {
+.main-container {
+    max-width: 1440px;
+    height: 780px;
     background:url(../assets/bg.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+}
+.curriculum-container {
+    width: 1159px;
+    margin: 0 auto;
 }
 .section-title {
     margin-top: 60px;
@@ -202,11 +207,145 @@ main > section {
     text-align: center;
     color: white;
 }
+/* story section styles */
+.story-container {
+    max-width: 1440px;
+    height: 1020px;
+    background: linear-gradient(0deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 1)),url(../assets/bg.png);
 
+}
+#container-title {
+    background:url(../assets/bg.png);
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.large-card {
+    width: 530px;
+    border-radius: 16px;
+    grid-area: large-card;
+}
+.large-card h4 {
+    padding-left: 38px;
+    font-weight: 700;
+    font-size: 24px;
+}
+.story-description {
+    padding-left: 38px;
+    font-weight: 500;
+    font-size: 0.96rem;
+    color: #666666;
+    margin-top: 48px;
+    margin-bottom: 34px;
+}
+.large-card img {
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    margin-bottom: 58px;
+}
+.story-card-common-style {
+    width: 290px;
+    height: 300px;
+    border-radius: 16px;
+}
+.story-title {
+    padding-left: 38px;
+}
+.story-card-button {
+    /* relative position style */
+}
+.story-card-common-style img {
+    height: 60%;
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+.card-01{
+    grid-area: card-01;
+}
+.card-02{
+    grid-area: card-02;
+}
+.card-03{
+    grid-area: card-03;
+}
+.card-04{
+    grid-area: card-04;
+}
+.story-card-container {
+    display: grid;
+    max-width: 1159px;
+    min-width: 100px;
+    margin: 0 auto;
+    grid-template-areas: 
+    "large-card large-card card-01 card-02"
+    "large-card large-card card-01 card-02"
+    "large-card large-card card-03 card-04"
+    "large-card large-card card-03 card-04";
+    gap: 18px;
+}
+.btn-article {   
+    justify-items: center;
+    margin-top: 80px;
+}
+.btn-article button {
+    background-color: black;
+}
 
-
-
+/* footer styles */
+.footer {
+    max-width: 1440px;
+    height: 519px;
+    margin: 0 auto;
+    background-color: #01ACFD;
+}
+.footer-section {
+    padding-top: 124px;
+    max-width: 1159px;
+    margin: 0 auto;
+    display: flex;
+    
+}
+.info-content {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: white;
+}
+.info p {
+    padding-left: 8px;
+    margin-top: 35px;
+    color: white;
+}
+.info {
+    width: 350px;
+}
+.about-items {
+    margin-left: 172px;
+}
+.about-items ul, .media {
+    margin-top: 38px;
+}
+.about-items li {
+    list-style: none;
+    margin-top: 20px;
+}
+.about-items li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color:#FFFFFF;
+}
+.footer-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #FFFFFF;
+}
+.keep-in-touch {
+    margin-left: 150px;
+}
 
 @media screen and (max-width: 576px) {
     .nav {
