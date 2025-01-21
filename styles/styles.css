@@ -22,6 +22,10 @@
 }
 
 /* shared styles */
+.description {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
 .btn-primary {
     font-weight: 600;
     font-size: 1.25rem;
@@ -80,6 +84,33 @@
 }
 .nav button {
     background-color: orange;
+}
+/* banner styles */
+.banner-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-title {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+}
+#Empowering {
+    color:orange;
+}
+#vision {
+    color: #01ACFD;
+}
+.banner-content button {
+    background-color: black;
+    margin-top: 24px;
+}
+.banner-container img {
+    width: 45%;
 }
 @media screen and (max-width: 576px) {
     .nav {
