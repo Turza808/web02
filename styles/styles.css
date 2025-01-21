@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* shared styles */
+.btn-primary {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color:#FFFFFF;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 12px;
+}
+
+/* nav styles */
+.nav {
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo-containner {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo-containner img {
+    max-width: 62px;
+    max-height: 62px;
+}
+
+.nav-content ul {
+    display: flex;
+    gap: 32px;
+}
+
+.nav-content ul li {
+    list-style: none;
+}
+
+.nav-content li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.home {
+    color: #FEA301;
+}
+.about {
+    color: #01ACFD;
+}
+.facilities {
+    color: #05D4DF;
+}
+.admission {
+    color: #5D58EF;
+}
+.nav button {
+    background-color: orange;
+}
+@media screen and (max-width: 576px) {
+    .nav {
+        padding: 12px 16px 16px 12px;
+        border: 1px solid  orange;
+    }
+    .logo-containner img {
+        width: 100%;
+    } 
+    .logo-containner h4, .nav-content, .nav button {
+        display:none;
+    }
+    .horizontal-line {
+        width: 100%;
+    }
+}
+
