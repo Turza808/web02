@@ -9,6 +9,10 @@
     font-style: normal;
 }
 
+.hide {
+    display: none;
+}
+
 .raleway-font {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
@@ -22,10 +26,23 @@
 }
 
 /* shared styles */
+button>a {
+    text-decoration: none;
+    color: white;
+}
 
 .description {
     font-weight: 400;
     font-size: 1.25rem;
+}
+
+#symbol-a {
+    color: white;
+    text-decoration: none;
+}
+
+#symbol-a:visited {
+    color: white;
 }
 
 main {
@@ -36,17 +53,20 @@ main {
 .btn-primary {
     font-weight: 600;
     font-size: 1.25rem;
-    color:#FFFFFF;
+    color: #FFFFFF;
     border: none;
     padding: 10px 60px;
     border-radius: 12px;
 }
+
 .bg-card {
     background-color: #FFFFFF;
 }
+
 /* nav styles */
 .nav {
     max-width: 1159px;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -79,21 +99,27 @@ main {
     font-weight: 700;
     font-size: 1.25rem;
 }
+
 .home {
     color: #FEA301;
 }
+
 .about {
     color: #01ACFD;
 }
+
 .facilities {
     color: #05D4DF;
 }
+
 .admission {
     color: #5D58EF;
 }
+
 .nav button {
     background-color: orange;
 }
+
 /* banner styles */
 .banner-container {
     display: flex;
@@ -103,101 +129,130 @@ main {
     align-items: center;
     justify-content: space-between;
 }
+
 .banner-title {
     font-weight: 700;
     font-size: 3.5rem;
     margin-bottom: 24px;
 }
+
 #Empowering {
-    color:orange;
+    color: orange;
 }
+
 #vision {
     color: #01ACFD;
 }
+
 .banner-content button {
     background-color: black;
     margin-top: 24px;
 }
+
 .banner-container img {
     width: 41%;
 }
+
 /* curriculum section styles  */
 .main-container {
     max-width: 1440px;
     height: 780px;
-    background:url(../assets/bg.png);
+    background: url(../assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .curriculum-container {
     width: 1159px;
     margin: 0 auto;
 }
+
 .section-title {
     margin-top: 60px;
     text-align: center;
     font-weight: 700;
     font-size: 2.8rem;
 }
-.card-container{
+
+.card-container {
     margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
 }
+
 .card {
     width: 350px;
     padding: 80pz 18px;
     text-align: center;
-    border-radius: 19px; 
-    box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.05);   
+    border-radius: 19px;
+    box-shadow: inset 0 0 28px rgba(0, 0, 0, 0.05);
 }
+
+#i1 {
+    width: 127px;
+    height: 126px;
+}
+
 .card img {
     margin-top: 50px;
 }
+
 .card-title {
     font-weight: 700;
     font-size: 1.6rem;
     margin-top: 32px;
 }
+
 .card-description {
     margin-top: 33px;
     font-weight: 500;
     font-size: 0.9rem;
     color: #808080;
 }
-.card-A, .card-B, .card-C{
+
+.card-A,
+.card-B,
+.card-C {
     font-weight: 700;
     font-size: 0.9rem;
     margin-top: 34px;
     margin-bottom: 40px;
 }
+
 .card-A {
-    color:#64C8FF;
+    color: #64C8FF;
 }
+
 .card-B {
     color: #F0AA00;
 }
+
 .card-C {
     color: #8700FF;
 }
+
 .lg1 {
-    background: linear-gradient(189deg, #DEF5FF ,#FFFFFF 40%, white);
+    background: linear-gradient(180deg, #DEF5FF, #FFFFFF 40%, white);
 }
+
 .lg2 {
-    background: linear-gradient(189deg, #FFF4DC ,#FFFFFF 40%);
+    background: linear-gradient(180deg, #FFF4DC, #FFFFFF 40%);
 }
+
 .lg3 {
-    background: linear-gradient(189deg, #EEE1FF,#FFFFFF 40%);
+    background: linear-gradient(180deg, #EEE1FF, #FFFFFF 40%);
 }
-.symbol-container{
+
+.symbol-container {
     font-size: 3rem;
     width: 150px;
     height: 60px;
     margin: 80px auto;
-    display: flex ;
+    display: flex;
     gap: 10px;
 }
+
 .symbol {
     background-color: orange;
     width: 70px;
@@ -205,18 +260,21 @@ main {
     padding-top: 10px;
     border-radius: 50%;
     text-align: center;
-    color: white;
 }
+
 /* story section styles */
 .story-container {
     max-width: 1440px;
-    height: 1020px;
-    background: linear-gradient(0deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 1)),url(../assets/bg.png);
+    height: 850px;
+    background: linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 1)), url(../assets/bg.png);
+    background-size: contain;
 
 }
+
 #container-title {
-    background:url(../assets/bg.png);
+    background-image: url(../assets/bg.png);
     height: 180px;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,70 +285,118 @@ main {
     border-radius: 16px;
     grid-area: large-card;
 }
+
 .large-card h4 {
     padding-left: 38px;
     font-weight: 700;
     font-size: 24px;
+    margin-top: 10px;
 }
+
 .story-description {
     padding-left: 38px;
     font-weight: 500;
-    font-size: 0.96rem;
+    font-size: 1rem;
     color: #666666;
-    margin-top: 48px;
+    margin-top: 40px;
     margin-bottom: 34px;
 }
+
 .large-card img {
     border-radius: 16px 16px 0 0;
     width: 100%;
-    margin-bottom: 58px;
+    margin-bottom: 25px;
 }
+
 .story-card-common-style {
     width: 290px;
     height: 300px;
     border-radius: 16px;
 }
+
 .story-title {
+    margin-top: 15px;
     padding-left: 38px;
 }
-.story-card-button {
-    /* relative position style */
+
+.card-01 .story-card-button,
+.card-02 .story-card-button,
+.card-03 .story-card-button,
+.card-04 .story-card-button,
+.large-card .story-card-button {
+    position: relative;
+    left: 38px;
+    bottom: 25px;
 }
+
+.large-card .story-card-button {
+    bottom: 55px;
+}
+
+.large-card .story-card-button button {
+    padding: 17px 22px;
+}
+
+.story-card-button button {
+    /* relative position style */
+    font-weight: 500px;
+    font-size: 0.96rem;
+    color: #FFFFFF;
+    padding: 10px 19px;
+    border: none;
+    border-radius: 48px;
+}
+
 .story-card-common-style img {
     height: 60%;
     width: 100%;
     border-radius: 16px 16px 0 0;
 }
-.card-01{
+
+.card-01 {
     grid-area: card-01;
 }
-.card-02{
+
+.card-02 {
     grid-area: card-02;
 }
-.card-03{
+
+.card-03 {
     grid-area: card-03;
 }
-.card-04{
+
+.card-04 {
     grid-area: card-04;
 }
+
 .story-card-container {
     display: grid;
     max-width: 1159px;
-    min-width: 100px;
     margin: 0 auto;
-    grid-template-areas: 
-    "large-card large-card card-01 card-02"
-    "large-card large-card card-01 card-02"
-    "large-card large-card card-03 card-04"
-    "large-card large-card card-03 card-04";
+    grid-template-areas:
+        "large-card large-card card-01 card-02"
+        "large-card large-card card-01 card-02"
+        "large-card large-card card-03 card-04"
+        "large-card large-card card-03 card-04";
     gap: 18px;
 }
-.btn-article {   
+
+.btn-article {
     justify-items: center;
     margin-top: 80px;
 }
+
 .btn-article button {
     background-color: black;
+}
+.s-color01 {
+    background-color: #3CD8E8;
+}
+.s-color02 {
+    background-color: #95B226;
+}
+.s-color03 {
+    background-color: #5D58F0;
 }
 
 /* footer styles */
@@ -300,13 +406,15 @@ main {
     margin: 0 auto;
     background-color: #01ACFD;
 }
+
 .footer-section {
     padding-top: 124px;
     max-width: 1159px;
     margin: 0 auto;
     display: flex;
-    
+
 }
+
 .info-content {
     display: flex;
     align-items: center;
@@ -314,63 +422,174 @@ main {
     font-size: 1.8rem;
     color: white;
 }
+
 .info p {
     padding-left: 8px;
     margin-top: 35px;
     color: white;
 }
+
 .info {
     width: 350px;
 }
+
 .about-items {
     margin-left: 172px;
 }
-.about-items ul, .media {
+
+.about-items ul,
+.media {
     margin-top: 38px;
 }
+
 .about-items li {
     list-style: none;
     margin-top: 20px;
 }
+
 .about-items li a {
     text-decoration: none;
     font-weight: 500;
     font-size: 1.2rem;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
+
 .footer-title {
     font-weight: 700;
     font-size: 1.6rem;
     color: #FFFFFF;
 }
+
 .keep-in-touch {
     margin-left: 150px;
 }
 
 @media screen and (max-width: 576px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    main,
+    body,
+    header {
+        width: 100%;
+    }
+
     .nav {
+        width: 92%;
         padding: 12px 16px 16px 12px;
-        border: 1px solid  orange;
+        border: 1px solid orange;
+        justify-content: space-between;
+        margin-right: 50px;
     }
-    .logo-containner img {
-        width: 100%;
-    } 
-    .logo-containner h4, .nav-content, .nav button {
-        display:none;
+
+    .logo-containner h4,
+    .nav-content,
+    .nav button,
+    .symbol-container,
+    .large-card {
+        display: none;
     }
-    .horizontal-line {
-        width: 100%;
-    }
+
     .banner-container {
+        width: 90%;
         flex-direction: column-reverse;
-        margin: 28px 17px 20px 17px;
+        text-align: center;
+        margin-left: 10px;
+        align-items: center;
+        padding-left: 20px;
+        margin-bottom: 10px;
     }
+
     .banner-content {
+        margin: 0 30px 0 0;
+    }
+
+    .banner-container img {
+        width: 80%;
+        margin-right: 28px;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+
+    .curriculum-container {
         width: 100%;
         text-align: center;
     }
-    .banner-container img {
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        margin: 15px auto;
+    }
+
+    #container-title {
+        width: 100%;
+        margin-top: 800px;
+    }
+
+    .responsive-title {
+        padding: 0;
+        margin-left: 10px;
+    }
+    .story-title {
+        padding-left: 7px;
+        font-size: 1rem;
+    }
+
+
+    .story-card-container {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+    .card-01 .story-card-button,
+    .card-02 .story-card-button,
+    .card-03 .story-card-button,
+    .card-04 .story-card-button {
+        width: 30%;
+        left: 5px;
+        bottom: 38px;
+    }
+    .story-card-button button {
+        padding: 10px 10px;
+        
+    }
+    .footer{
+        width: 100%;
+        height: 100%;
+    }
+    .footer-section {
+        flex-direction: column;
+    }
+    .about-items {
+        margin-bottom: 30px;
+        margin-left: 36px;
+    }
+    .keep-in-touch, .info {
+        margin-bottom: 30px;
+        margin-left: 30px;
+    }
+    .hide {
+        display: block;
+    }
+    .main-container {
         width: 100%;
     }
+    .story-container {
+        width: 100%;
+        background-size: contain;
+    }
+    .story-card-common-style {
+        width: 95%;
+    }
+    .story-card-common-style img {
+        height: 50%;
+        margin-bottom: 2px;
+    }
 }
-

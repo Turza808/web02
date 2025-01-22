@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids-Education</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://kit.fontawesome.com/1084bc3c15.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="quicksand-font">
@@ -23,8 +24,8 @@
                     <li><a class="admission" href="">Admission</a></li>
                 </ul>
             </div>
-            <button class="btn-primary">Contact</button>
-            <!-- here i need to make a manu section where the styles will be display none -->
+            <button class="btn-primary"><a href="">Contact</a></button>
+            <div class="hide"><i class="fa-solid fa-bars"></i></div>
         </nav>
         <div class="banner-container">
             <div class="banner-content">
@@ -34,104 +35,109 @@
                 </h3>
                 <p class="description">With the courage, Confidence, Creativity and Compassion to make <br> their Unique
                     Contribution in a Diverse and Dynamic World.</p>
-                <button class="btn-primary">Enroll Now</button>
+                <button class="btn-primary"><a href="">Enroll Now</a></button>
             </div>
-            <img src="assets/hero-kids.png" alt="">
+            <img src="assets/hero-kids.png" alt=""> 
         </div>
     </header>
     <main>
         <section class="main-container">
-        <div class="curriculum-container">
-            <h3 class="section-title">Standard Curriculum</h3>
-            <div class="card-container">
-                <div class="card lg1">
-                    <img src="assets/kinder.png" alt="">
-                    <h3 class="card-title">Kinder (3-6) Years</h3>
-                    <p class="card-description raleway-font">Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus
-                        mu sdis parturient</p>
-                    <h5 class="card-A">Read more</h5>
+            <div class="curriculum-container">
+                <h3 class="section-title">Standard Curriculum</h3>
+                <div class="card-container">
+                    <div class="card lg1 ">
+                        <img id="i1" src="assets/kinder.png" alt="">
+                        <h3 class="card-title">Kinder (3-6) Years</h3>
+                        <p class="card-description raleway-font">Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus
+                            mu sdis parturient</p>
+                        <h5 class="card-A">Read more</h5>
 
-                </div>
-                <div class="card lg2">
-                    <img src="assets/elementary.png" alt="">
-                    <h3 class="card-title">Elementary School</h3>
-                    <p class="card-description raleway-font">Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus
-                        mu sdis parturient</p>
-                    <h5 class="card-B">Read more</h5>
+                    </div>
+                    <div class="card lg2">
+                        <img src="assets/elementary.png" alt="">
+                        <h3 class="card-title">Elementary School</h3>
+                        <p class="card-description raleway-font">Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus
+                            mu sdis parturient</p>
+                        <h5 class="card-B">Read more</h5>
 
+                    </div>
+                    <div class="card lg3">
+                        <img src="assets/middle.png" alt="">
+                        <h3 class="card-title">Middle (10-16) Years</h3>
+                        <p class="card-description raleway-font">Cum sociis natoque penatibus et magnis
+                            dis parturient montes, nascetur ridiculus
+                            mu sdis parturient</p>
+                        <h5 class="card-C">Read more</h5>
+                    </div>
                 </div>
-                <div class="card lg3">
-                    <img src="assets/middle.png" alt="">
-                    <h3 class="card-title">Middle (10-16) Years</h3>
-                    <p class="card-description raleway-font">Cum sociis natoque penatibus et magnis
-                        dis parturient montes, nascetur ridiculus
-                        mu sdis parturient</p>
-                    <h5 class="card-C">Read more</h5>
+                <div class="symbol-container">
+                    <div class="symbol">
+                        <h5><a id="symbol-a" href=""> &#60; </a></h5>
+                    </div>
+                    <div class="symbol">
+                        <h5> <a id="symbol-a" href=""> &#62; </a></h5>
+                    </div>
                 </div>
             </div>
-            <div class="symbol-container">
-                <div class="symbol">
-                    <h5>
-                        < </h5>
-                </div>
-                <div class="symbol">
-                    <h5> > </h5>
-                </div>
-            </div>
-        </div>
         </section>
-        <!-- story section start -->
-        <section class="story-container">
             <div id="container-title">
-                <h class="section-title">Our stories</h>
+                <h class="section-title responsive-title">Our stories</h>
             </div>
+    
+        <section class="story-container">
             <div class="story-card-container">
                 <div class="large-card bg-card">
                     <img src="assets/story-1.png" alt="">
                     <div class="story-card-button">
-                        <button>November 19, 201<span>9</span></button>
+                        <button class="raleway-font s-color01 ">November 19, 2019</button>
                     </div>
                     <h4>A fun toddler coloring training on classroom</h4>
-                    <p class="story-description raleway-font">Beautiful branding for changes by Never Now in Australia.changes is a platform for open discussion in an inclusive andcollaborative environment, providing the...</p>
+                    <p class="story-description raleway-font">Beautiful branding for changes by Never Now in
+                        Australia. <br> changes is a platform for open discussion in an inclusive andcollaborative
+                        environment, providing the...</p>
                 </div>
                 <div class="card-01 bg-card story-card-common-style">
                     <img src="assets/story-2.png" alt="">
                     <div class="story-card-button">
-                        <button>November 19, 201<span>9</span></button>
+                        <button class="raleway-font s-color02">November 19, 2019</button>
                     </div>
-                    <h4 class="story-title">A fun toddler coloring training on classroom</h4>
+                    <h4 class="story-title">Find out if a school fits thefamily’s needs</h4>
                 </div>
                 <div class="card-02 bg-card story-card-common-style">
                     <img src="assets/story-3.png" alt="">
                     <div class="story-card-button">
-                        <button>November 19, 201<span>9</span></button>
+                        <button class="raleway-font s-color03">November 19, 2019</button>
                     </div>
-                    <h4 class="story-title">A fun toddler coloring training on classroom</h4>
+                    <h4 class="story-title">Summer math & literacy
+                        <br> centres for kids
+                    </h4>
                 </div>
                 <div class="card-03 bg-card story-card-common-style">
                     <img src="assets/story-4.png" alt="">
                     <div class="story-card-button">
-                        <button>November 19, 201<span>9</span></button>
+                        <button class="raleway-font s-color02">September 10, 2019</button>
                     </div>
-                    <h4 class="story-title">A fun toddler coloring training on classroom</h4>
-                </div> 
+                    <h4 class="story-title">Classroom management
+                        techniques for new tutors</h4>
+                </div>
                 <div class="card-04 bg-card story-card-common-style">
                     <img src="assets/story-5.png" alt="">
                     <div class="story-card-button">
-                        <button>November 19, 201<span>9</span></button>
+                        <button class="raleway-font s-color02">July 19,2019</button>
                     </div>
-                    <h4 class="story-title">A fun toddler coloring training on classroom</h4>
+                    <h4 class="story-title">Classroom management
+                        techniques for new tutors</h4>
                 </div>
             </div>
             <article class="btn-article">
                 <div>
-                    <button class="btn-primary">View All</button>    
-                </div> 
+                    <button class="btn-primary"><a href="">View All</a></button>
+                </div>
             </article>
         </section>
-        
+
     </main>
     <footer class="footer">
         <section class="footer-section">
